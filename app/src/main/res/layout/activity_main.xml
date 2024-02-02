@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15sp">
+
+        <TextView
+            android:id="@+id/tv_appName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_valor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valor1"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_valor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal|numberSigned"
+            android:numeric="signed|integer|decimal"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tv_valor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/valor2"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_valor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number|numberDecimal|numberSigned"
+            android:numeric="signed|integer|decimal"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btn_somar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="operar"
+            android:text="@string/somar" />
+
+        <Button
+            android:id="@+id/btn_subtrair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="operar"
+            android:text="@string/subtrair" />
+
+        <Button
+            android:id="@+id/btn_multiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="operar"
+            android:text="@string/multiplicar" />
+
+        <Button
+            android:id="@+id/btn_dividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="operar"
+            android:text="@string/dividir" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
